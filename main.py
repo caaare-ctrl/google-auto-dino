@@ -10,12 +10,12 @@
 # https://pypi.org/project/Pillow/
 # https://pyautogui.readthedocs.io/en/latest/
 # Size(width=1920, height=1080)
+# The game window is on the left side, half of the size of the window
 import pyautogui
-# pyautogui.screenshot("example.jpg")
 # start the game
 pyautogui.click(x=100, y=200)
 pyautogui.press('up')
-images = ["img.png","img_1.png","img_2.png","img_3.png","img_4.png","img_5.png"]
+
 # region = left, top, width, and height
 pyautogui.screenshot(imageFilename="example.jpg",region=(5,250,1000,400))
 pyautogui.screenshot(imageFilename="test.png",region=(176,478,170,100))
