@@ -15,11 +15,10 @@ import pyautogui
 # start the game
 pyautogui.click(x=200, y=200)
 pyautogui.press('up')
-
+select_region = (183,489,160,100)
 # region = left, top, width, and height
 # pyautogui.screenshot(imageFilename="example.jpg",region=(5,250,1000,400))
-# pyautogui.screenshot(imageFilename="test.png",region=(190,500,180,100))
+pyautogui.screenshot(imageFilename="test.png",region=select_region)
 while True:
-    if pyautogui.locateOnScreen("img_6.png", confidence=0.3, region=(183,489,180,180), grayscale=True):
+    if pyautogui.locateOnScreen("img_6.png", confidence=0.3, region=select_region, grayscale=True):
         pyautogui.press('up')
-        print("d")
