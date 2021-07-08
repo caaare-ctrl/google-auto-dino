@@ -13,13 +13,13 @@
 # The game window is on the left side, half of the size of the window
 import pyautogui
 # start the game
-pyautogui.click(x=100, y=200)
+pyautogui.click(x=200, y=200)
 pyautogui.press('up')
 
 # region = left, top, width, and height
 pyautogui.screenshot(imageFilename="example.jpg",region=(5,250,1000,400))
-pyautogui.screenshot(imageFilename="test.png",region=(176,478,170,100))
+pyautogui.screenshot(imageFilename="test.png",region=(190,500,180,100))
 while True:
-    if pyautogui.locateOnScreen("img_6.png", confidence=0.4, region=(179,478,160,100), grayscale=True):
+    if pyautogui.locateOnScreen("img_6.png", confidence=0.3, region=(183,489,180,180), grayscale=True):
         pyautogui.press('up')
-
+        print("d")
